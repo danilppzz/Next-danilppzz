@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,7 +24,9 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
           height={54}
           alt="danilppzz web icon"
         />
-        <h1 className={itim.className + " text-[20px] text-light-20 select-none"}><Link href={"/"}>danilppzz</Link></h1>
+        <h1 className={itim.className + " text-[20px] text-light-20 select-none"}>
+          <Link href={"/"}>danilppzz</Link>
+        </h1>
       </div>
       <nav className="flex items-center space-x-4 h-[54px] desktop:mr-[300px] laptop:mr-2 tablet:mr-2">
         <Link
