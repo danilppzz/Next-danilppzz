@@ -21,8 +21,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <meta property="og:type" content="website"></meta>
-        <meta property="og:color" content="#FFFFFF"></meta>
+        <meta name="og:type" content="website"></meta>
+        <meta name="og:color" content="#FFFFFF"></meta>
         <link rel="icon" href="/icon.png" type="image/png" sizes="128x128" />
       </head>
       <body className={inter.className}>
