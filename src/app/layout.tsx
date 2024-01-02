@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Portfolio of danilppzz!",
   openGraph: {
     title: "danilppzz",
-    images: "/icon.png",
+    images: "https://danilppzz.dev/icon.png",
     description: "Portfolio of danilppzz!",
   },
 };
@@ -21,7 +21,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <meta property="og:color" content="#ffffff"></meta>
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:color" content="#FFFFFF"></meta>
         <link rel="icon" href="/icon.png" type="image/png" sizes="128x128" />
       </head>
       <body className={inter.className}>
