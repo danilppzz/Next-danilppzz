@@ -16,12 +16,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <meta name="og:type" content="website"></meta>
-        <meta name="og:title" content="danilppzz"></meta>
-        <meta name="og:description" content="Portfolio of danilppzz!"></meta>
-        <meta name="og:color" content="#ffffff"></meta>
-        <meta name="theme-color" content="#ffffff"></meta>
-        <meta name="og:image" content="https://danilppzz.dev/icon.png"></meta>
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:title" content="danilppzz"></meta>
+        <meta property="og:description" content="Portfolio of danilppzz!"></meta>
+        <meta property="og:color" content="#ffffff"></meta>
+        <meta property="theme-color" content="#ffffff"></meta>
+        <meta property="og:image" content="https://danilppzz.dev/icon.png"></meta>
         <link rel="icon" href="/icon.png" type="image/png" sizes="128x128" />
       </head>
       <body className={inter.className}>
