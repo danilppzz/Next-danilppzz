@@ -43,7 +43,7 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
           <Link href={"/"}>danilppzz</Link>
         </h1>
       </div>
-      <nav className="flex items-center space-x-4 h-[54px] desktop:mr-[300px] laptop:mr-4 tablet:mr-4 mr-2">
+      <nav className="flex items-center space-x-4 h-[54px] desktop:mr-[300px] laptop:mr-2 tablet:mr-2 mr-2">
         {isMobile ? (
           <>
             <Button state="allow" box={true}>
