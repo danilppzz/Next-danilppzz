@@ -10,7 +10,8 @@ interface HeaderNavProps {}
 const itim = Itim({ subsets: ["latin"], weight: "400" });
 
 const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState<boolean | undefined>(undefined);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -25,6 +26,10 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   function openCV() {
     window.open("/cv", "_blank");
@@ -44,11 +49,29 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
         </h1>
       </div>
       <nav className="flex items-center space-x-4 h-[54px] desktop:mr-[300px] laptop:mr-2 tablet:mr-2 mr-2">
-        {isMobile ? (
+        {isMobile === undefined ? (
+          <h1></h1>
+        ) : isMobile ? (
           <>
-            <Button state="allow" box={true}>
+            <Button state="allow" box={true} onClick={toggleMenu}>
               {`<svg class="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg>`}
             </Button>
+            {isMenuOpen && (
+              <div className="absolute top-14 right-0 shadow-md p-2 w-full transition-all duration-1000 ease-in-out">
+                <Link
+                  href="#about"
+                  className={`${itim.className} text-light-20 block py-1 hover:text-blue-500`}
+                >
+                  About
+                </Link>
+                <Link
+                  href="#projects"
+                  className={`${itim.className} text-light-20 block py-1 hover:text-blue-500`}
+                >
+                  Projects
+                </Link>
+              </div>
+            )}
           </>
         ) : (
           <>
