@@ -108,13 +108,13 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
           <>
             <Link
               className={`${itim.className} text-base text-light-20 text-[20px] transition duration-300 ease-in-out transform hover:scale-110`}
-              href="#about"
+              href="/#about"
             >
               About
             </Link>
             <Link
               className={`${itim.className} text-base text-light-20 text-[20px] transition duration-300 ease-in-out transform hover:scale-110`}
-              href="#projects"
+              href="/#projects"
             >
               Projects
             </Link>
