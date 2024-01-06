@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({
   className,
 }) => {
   const buttonClasses = `text-light-20 py-2 px-4 rounded h-[35px] bg-dark-30 border-white border-solid border-opacity-20 border-[0.2px] rounded-4 flex items-center justify-center hover:bg-dark-10
-    ${state === "allow" ? "cursor-pointer" : "cursor-not-allowed"}
+    ${state ? "cursor-pointer" : "cursor-not-allowed"}
     ${box ? "w-[35px]" : "w-[80px]"}
   `;
 
