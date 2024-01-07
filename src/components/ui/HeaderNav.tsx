@@ -95,10 +95,11 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
                 </Link>
                 <Link
                   href="https://github.com/danilppzz"
+                  target="_blank"
                   className={`${itim.className} text-light-20 block py-1 hover:text-blue-500`}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Github
+                  Github 🔗
                 </Link>
                 
               </div>
