@@ -7,6 +7,11 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    extend: {
+      scale: {
+        '90': '0.9',
+      },
+    },
     screens: {
       'tablet': '640px',
       // => @media (min-width: 640px) { ... }
