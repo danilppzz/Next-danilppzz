@@ -19,15 +19,17 @@ const config: Config = {
       'laptop': '1024px',
       // => @media (min-width: 1024px) { ... }
 
+      'laptop-xl': '1166px',
+      // => @media (min-width: 1024px) { ... }
+
       'desktop': '1280px',
       // => @media (min-width: 1280px) { ... }
     },
     colors: {
       dark: {
-        10: '#242424',
-        20: '#262626',
-        30: '#2C2C2C',
-        40: '#444444',
+        10: '#181818',
+        20: '#181818',
+        30: '#282929'
       },
       light: {
         10: '#ffffff',
