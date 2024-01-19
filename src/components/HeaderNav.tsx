@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { Itim } from "next/font/google";
-import Button from "./Button";
+import Button from "./ui/Button";
 
 interface HeaderNavProps {}
 
