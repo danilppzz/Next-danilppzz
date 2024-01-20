@@ -135,7 +135,7 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
               box={false}
               onClick={() => openURL("https://github.com/danilppzz", true)}
             >
-              Github
+              GitHub
             </Button>
           </>
         )}
