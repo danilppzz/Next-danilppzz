@@ -138,11 +138,11 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
               Projects
             </Link>
             <div className="border-l border-[#9D9D9D] h-6 mx-4" />
-            <Link href="/cv">
+            <Link href="/sample.pdf">
               <Button>cv</Button>
             </Link>
             <div className="border-l border-[#9D9D9D] h-6 mx-4" />
-            <Link href="/sample.pdf">
+            <Link href="https://github.com/danilppzz">
               <Button>GitHub</Button>
             </Link>
           </>
