@@ -106,7 +106,7 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
                   Projects
                 </Link>
                 <Link
-                  href="/cv"
+                  href="/sample.pdf"
                   className={`${itim.className} text-light-20 block py-1 hover:text-blue-500`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -142,7 +142,7 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
               <Button>cv</Button>
             </Link>
             <div className="border-l border-[#9D9D9D] h-6 mx-4" />
-            <Link href="https://github.com/danilppzz" target="_blank">
+            <Link href="/sample.pdf">
               <Button>GitHub</Button>
             </Link>
           </>
