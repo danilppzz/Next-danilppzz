@@ -53,7 +53,7 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
           : "border-b-[0.5px] border-light-30 border-opacity-0"
       }`}
     >
-      <div className="flex items-center space-x-4 desktop:ml-[400px] laptop-xl:ml-[200px] laptop:ml-2 tablet:ml-2">
+      <div className="flex items-center space-x-4 desktop:ml-[400px] laptop:ml-2 tablet:ml-2">
         <Image
           className="select-none"
           src="/icon.png"
@@ -70,7 +70,7 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
           <Link href={"/"}>danilppzz</Link>
         </h1>
       </div>
-      <nav className="flex items-center space-x-4 h-[54px] desktop:mr-[400px] laptop-xl:mr-[200px] laptop:mr-4 tablet:mr-4 mr-4">
+      <nav className="flex items-center space-x-4 h-[54px] desktop:mr-[400px] laptop:mr-4 tablet:mr-4 mr-4">
         {isMobile === undefined ? (
           <h1></h1>
         ) : isMobile ? (
