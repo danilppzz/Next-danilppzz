@@ -1,8 +1,9 @@
-.ripple-btn {
+.input-css {
   @apply text-light-20 py-2 px-[10px] rounded h-[35px] bg-dark-10 border-light-30 border-solid border-opacity-10 border-[0.1px] rounded-[4px] flex items-center justify-center hover:bg-dark-20;
 
   position: relative;
   overflow: hidden;
+  outline: none;
   cursor: pointer;
 }
 

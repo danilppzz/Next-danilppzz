@@ -46,7 +46,7 @@ const Button: React.FC<ButtonProps> = ({ onClick, children, className }) => {
   return (
     <button
       ref={buttonRef}
-      className={"ripple-btn " + itim.className + " " + className}
+      className={"input-css " + itim.className + " " + className}
       onClick={(e) => {
         handlerClick(e);
       }}
