@@ -2,9 +2,6 @@
 // RippleButton.tsx
 import React, { ReactNode, useRef } from "react";
 import "./css/Button.css";
-import { Itim } from "next/font/google";
-
-const itim = Itim({ subsets: ["latin"], weight: "400" });
 
 interface ButtonProps {
   onClick?: () => void;
@@ -46,7 +43,7 @@ const Button: React.FC<ButtonProps> = ({ onClick, children, className }) => {
   return (
     <button
       ref={buttonRef}
-      className={"input-css " + itim.className + " " + className}
+      className={"input-css " + className}
       onClick={(e) => {
         handlerClick(e);
       }}

@@ -86,28 +86,28 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
               <div className="absolute bg-dark-10 top-14 right-0 shadow-md p-2 w-full transition-all duration-1000 ease-in-out border-b-[0.5px] border-light-30 border-opacity-10">
                 <Link
                   href="/"
-                  className={`${itim.className} text-light-20 block py-1 hover:text-blue-500`}
+                  className={`text-light-20 block py-1 hover:text-blue-500`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
                 </Link>
                 <Link
                   href="/#about"
-                  className={`${itim.className} text-light-20 block py-1 hover:text-blue-500`}
+                  className={`text-light-20 block py-1 hover:text-blue-500`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   About
                 </Link>
                 <Link
                   href="/#projects"
-                  className={`${itim.className} text-light-20 block py-1 hover:text-blue-500`}
+                  className={`text-light-20 block py-1 hover:text-blue-500`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Projects
                 </Link>
                 <Link
                   href="/sample.pdf"
-                  className={`${itim.className} text-light-20 block py-1 hover:text-blue-500`}
+                  className={`text-light-20 block py-1 hover:text-blue-500`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Curriculum Vitae
@@ -115,7 +115,7 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
                 <Link
                   href="https://github.com/danilppzz"
                   target="_blank"
-                  className={`${itim.className} text-light-20 block py-1 hover:text-blue-500`}
+                  className={`text-light-20 block py-1 hover:text-blue-500`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Github 🔗
@@ -126,13 +126,13 @@ const HeaderNav: React.FC<HeaderNavProps> = ({}) => {
         ) : (
           <>
             <Link
-              className={`${itim.className} text-base text-light-20 text-[20px] transition duration-300 ease-in-out transform hover:scale-110`}
+              className={`text-base text-light-20 text-[20px] transition duration-300 ease-in-out transform hover:scale-110`}
               href="/#about"
             >
               About
             </Link>
             <Link
-              className={`${itim.className} text-base text-light-20 text-[20px] transition duration-300 ease-in-out transform hover:scale-110`}
+              className={`text-base text-light-20 text-[20px] transition duration-300 ease-in-out transform hover:scale-110`}
               href="/#projects"
             >
               Projects

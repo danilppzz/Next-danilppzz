@@ -2,9 +2,6 @@
 // RippleButton.tsx
 import React, { ReactNode, useRef } from "react";
 import "./css/Button.css";
-import { Itim } from "next/font/google";
-
-const itim = Itim({ subsets: ["latin"], weight: "400" });
 
 interface TextInputProps {
   type: "text" | "password" | "mail";
@@ -26,7 +23,7 @@ const TextInput: React.FC<TextInputProps> = ({
     <input
       type={type}
       placeholder={placeholder}
-      className={"input-css " + itim.className + " " + className}
+      className={"input-css " + className}
       onClick={(e) => {}}
     >
       {children}

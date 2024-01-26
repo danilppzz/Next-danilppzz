@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lato } from "next/font/google";
 import "./globals.css";
 
 // import header settings
 import HeaderNav from "@/components/HeaderNav";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Lato({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "danilppzz",
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="og:image" content="https://danilppzz.dev/icon.png"></meta>
         <link rel="icon" href="/icon.png" type="image/png" sizes="128x128" />
       </head>
-      <body className={inter.className}>
+      <body className={font.className}>
         <HeaderNav />
         {children}
       </body>
