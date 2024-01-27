@@ -22,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="og:description" content="Build awesome this with danilppzz!"></meta>
         <meta property="og:color" content="#ffffff"></meta>
         <meta property="og:image" content="https://danilppzz.dev/icon.png"></meta>
+        <meta property="twitter:card" content="summary_large_image"></meta>
         <meta property="twitter:title" content="danilppzz"></meta>
         <meta property="twitter:description" content="Build awesome this with danilppzz!"></meta>
         <meta property="twitter:color" content="#ffffff"></meta>
