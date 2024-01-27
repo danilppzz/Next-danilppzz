@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="twitter:title" content="danilppzz"></meta>
         <meta property="twitter:description" content="Build awesome this with danilppzz!"></meta>
         <meta property="twitter:color" content="#ffffff"></meta>
-        <meta property="twitter:image" content="https://danilppzz.dev/SRC_2.png"></meta>
+        <meta property="twitter:image" content="https://danilppzz.dev/icon.png"></meta>
 
         <link rel="icon" href="/icon.png" type="image/png" sizes="128x128" />
         <link rel="manifest" href="/manifest.json"></link>
